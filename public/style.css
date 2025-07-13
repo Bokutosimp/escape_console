@@ -1,0 +1,57 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000;
+  color: #00ff88;
+  font-family: 'JetBrains Mono', Consolas, monospace;
+  font-size: 22px;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+#console {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+#output {
+  flex: 1;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.line {
+  margin-bottom: 6px;
+}
+
+#inputLine {
+  display: flex;
+  align-items: center;
+}
+
+#prompt {
+  flex-shrink: 0;
+  margin-right: 6px;
+}
+
+#consoleInput {
+  background: transparent;
+  border: none;
+  color: #00ff88;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  outline: none;
+  flex: 1;
+}
+
+::selection {
+  background: #00ff88;
+  color: #000;
+}
